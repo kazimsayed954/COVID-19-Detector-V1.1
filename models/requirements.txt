@@ -1,0 +1,12 @@
+tensorflow==2.2.0
+numpy
+scipy
+gradio
+opencv-python
+scikit-learn
+matplotlib
+glob
+seaborn
+livelossplot
+flask
+requests

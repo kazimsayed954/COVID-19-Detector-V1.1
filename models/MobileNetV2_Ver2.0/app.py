@@ -69,7 +69,7 @@ def predict():
         preds = detect(frame)
         # print('DONE preds ', preds)
     return render_template('index.html', prediction_text='Patient Status: {}'.format(preds))
-    
+
 if __name__ == '__main__':
     model = load_model('model.h5')
     app.run(debug=True)
