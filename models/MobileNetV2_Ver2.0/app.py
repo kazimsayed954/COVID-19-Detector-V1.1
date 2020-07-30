@@ -25,7 +25,6 @@ def model_predict(img_path, model):
 
 def detect(frame):
         try:
-            # img = image.load_img(img_path)
             print('Inside detect')
             img = resize(frame,(224,224))
             img = np.expand_dims(img, axis=0)
@@ -56,19 +55,12 @@ def predict():
     """
     if request.method == 'POST':
         f = request.files['image']
-        # f=[x for x in request.form.values()]
-        # print('f = ', f)
         basepath = os.path.dirname(__file__)
-        # print('basepath = ', basepath)
         file_path = os.path.join(basepath, 'uploads', secure_filename(f.filename))
-        # print('file_path = ',file_path)
         f.save(file_path)
-        # print('f = ',f)
         frame = cv2.imread(file_path)
-        # print('frame = ', frame)
         preds = detect(frame)
-        # print('DONE preds ', preds)
-    return render_template('index.html', prediction_text='Patient Status: {}'.format(preds))
+    return render_template('index.html', prediction_text='Status: {}'.format(preds))
 
 if __name__ == '__main__':
     model = load_model('model.h5')

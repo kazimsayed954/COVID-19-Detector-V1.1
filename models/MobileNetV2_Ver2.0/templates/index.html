@@ -1,34 +1,74 @@
-<!DOCTYPE html>
 <html>
-
-<head>
-    <title>HOME PAGE</title>
-    <link rel="stylesheet" href='{{ url_for("static", filename="index.css")}}'>
-</head>
-
-<body>
-
-    <div class='predict'>
-        <form action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
-            <input type="file" name="image" id="imageUpload" onchange="loadFile(event)" accept=".png, .jpg, .jpeg">
-            <img id="output" />
-            <script>
-                var loadFile = function(event) {
-                    var output = document.getElementById('output');
-                    output.style.height = "200px";
-                    output.style.width = "200px";
-                    output.src = URL.createObjectURL(event.target.files[0]);
-                    output.onload = function() {
-                        URL.revokeObjectURL(output.src)
-                    }
-                };
-            </script>
-            <button type="submit">Predict</button>
-        </form>
-        <div>
-            {{ prediction_text }}
+    <head>
+        <link rel="stylesheet" href="../static/styles/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Noto+Serif+TC:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+    <body>
+        <div class='design1'>
+            <img class="imgback" src="../static/styles/img/Path%20132.png">
+            <img class="img3605" src="../static/styles/img/ID3605324.png">
+            <div class='covidtitle'>
+                COVID-19 Detector
+            </div>
+            <div class="divform">
+                <form action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
+                    <label class="formlabel">
+                        <input class="inpupload" id="inpupload" type="file" name="image" accept=".png, .jpg, .jpeg"/>
+                        <i class="ficon"></i>Upload image
+                    </label>
+                    <div id="img_preview" class="img_preview">
+                        <img src="" alt="img_p" class="img_preview_image"><span class="img_text">Image Preview</span>
+                    </div>
+                    <script>
+                        const inpupload = document.getElementById('inpupload');
+                        const img_preview = document.getElementById('img_preview');
+                        const pre_img = document.querySelector('.img_preview_image');
+                        const img_text = document.querySelector('.img_text');
+                        
+                        inpupload.addEventListener("change", function(){
+                            const file = this.files[0];
+                            if(file){
+                                img_preview.style.display = 'flex';
+                               const reader = new FileReader();
+                            img_text.style.display='none';
+                            pre_img.style.display='block';
+                            reader.addEventListener('load', function(){
+                                pre_img.setAttribute("src", this.result);
+                            });
+                            reader.readAsDataURL(file);
+                               }
+                        })
+                        console.log("img_p"+img_preview.textContent);
+                    </script>
+                    <button class="submit">Submit</button>
+                    <div class="predtext">{{ prediction_text }}</div>
+                </form>
+            </div>
         </div>
-    </div>
-</body>
-
+        <div class='design2'>
+            <img class="path2" src="../static/styles/img/Path%202.png">
+            <img class='group3' src="../static/styles/img/Group%203.png">
+            <div class="howto">
+                Prevention of COVID-19
+            </div>
+        </div>
+        <div class="design3">
+            <img class='mask' src="../static/styles/img/wearing_a_mask_.png">
+            <div class='wearmask'>Wear Mask</div>
+        </div>
+        <div class="design4">
+            <img class="hands" src="../static/styles/img/washing_hands.png">
+            <div class='washhands'>Wash Hands</div>
+        </div>
+        <div class="design5">
+            <img class="cough" src="../static/styles/img/coughing_.png">
+            <div class="covercough">Cover Coughs and Sneezes</div>
+        </div>
+        <div class="design6">
+            <img class='handshake' src="../static/styles/img/handshake.png">
+            <div class="contact">Avoid Contacts</div>
+        </div>
+    </body>
 </html>
