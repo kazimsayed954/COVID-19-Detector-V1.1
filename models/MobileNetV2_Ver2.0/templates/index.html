@@ -1,9 +1,17 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../static/styles/index.css">
         <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Noto+Serif+TC:wght@900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+        <script type="text/javascript">
+            function change(){ 
+                img_p = document.getElementsByClassName('img_preview');
+                img_p.style.display="block";
+            }
+        </script>
     </head>
     <body>
         <div class='design1'>
@@ -15,9 +23,10 @@
             <div class="divform">
                 <form action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
                     <label class="formlabel">
-                        <input class="inpupload" id="inpupload" type="file" name="image" accept=".png, .jpg, .jpeg"/>
+                        <input class="inpupload" id="inpupload" type="file" name="image" accept=".png, .jpg, .jpeg" onclick="change();"/>
                         <i class="ficon"></i>Upload image
                     </label>
+                    
                     <div id="img_preview" class="img_preview">
                         <img src="" alt="img_p" class="img_preview_image"><span class="img_text">Image Preview</span>
                     </div>
@@ -56,19 +65,27 @@
         </div>
         <div class="design3">
             <img class='mask' src="../static/styles/img/wearing_a_mask_.png">
-            <div class='wearmask'>Wear Mask</div>
+            <div class='wearmask'><p>Wear Mask</p></div>
         </div>
         <div class="design4">
             <img class="hands" src="../static/styles/img/washing_hands.png">
-            <div class='washhands'>Wash Hands</div>
         </div>
+        <div class='washhands'>
+            <p>Wash Hands</p>
+        </div>
+
         <div class="design5">
             <img class="cough" src="../static/styles/img/coughing_.png">
-            <div class="covercough">Cover Coughs and Sneezes</div>
         </div>
+        <div class="covercough">
+            <p>Cover Coughs and Sneezes</p>
+        </div>
+
         <div class="design6">
             <img class='handshake' src="../static/styles/img/handshake.png">
-            <div class="contact">Avoid Contacts</div>
+        </div>
+        <div class="contact">
+            <p>Avoid Contacts</p>
         </div>
     </body>
 </html>
