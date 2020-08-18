@@ -28,12 +28,16 @@ VAL_PATH = "CovidDataset/Test"
 # import
 
 import numpy as np
-import os
 import matplotlib.pyplot as plt
 import keras
 from keras.layers import *
 from keras.models import *
-from keras.preprocessing import image
+import tensorflow as tf
+import os
+
+assert tf.__version__.startswith('2')
+
+from keras.preprocessing import *
 
 """# CNN Based Model in Keras"""
 
@@ -93,11 +97,20 @@ validation_generator = test_dataset.flow_from_directory(
 
 )
 
+print (train_generator.class_indices)
+
+labels = '\n'.join(sorted(train_generator.class_indices.keys()))
+
+with open('labels.txt', 'w') as f:
+  f.write(labels)
+
+!cat labels.txt
+
 validation_generator.class_indices
 
 # number of training images we have are
 
-train_gen.n
+train_generator.n
 
 # number of test images we have are  
 
@@ -114,6 +127,20 @@ hist = model.fit_generator(
 """# Loss is very Less"""
 
 model.save('model_advance.h5')
+
+saved_model_dir = 'save/fine_tuning'
+tf.saved_model.save(model, saved_model_dir)
+
+converter = tf.lite.TFLiteConverter.from_saved_model(saved_model_dir)
+tflite_model = converter.convert()
+
+with open('covid_model.tflite', 'wb') as f:
+  f.write(tflite_model)
+
+from google.colab import files
+
+files.download('covid_model.tflite')
+files.download('labels.txt')
 
 model.evaluate_generator(train_generator)
 
