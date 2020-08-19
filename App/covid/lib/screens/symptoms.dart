@@ -1,8 +1,6 @@
 import 'package:covid/components/symptoms_card.dart';
 import 'package:covid/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class SymptomsPage extends StatelessWidget {
   @override

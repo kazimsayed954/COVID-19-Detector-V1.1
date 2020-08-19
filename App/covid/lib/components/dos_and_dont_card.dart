@@ -31,6 +31,9 @@ class DosAndDontsCard extends StatelessWidget {
               semanticsLabel: 'Image',
             ),
           ),
+          SizedBox(
+            width: 10,
+          ),
           Expanded(
             flex: 5,
             child: Column(
