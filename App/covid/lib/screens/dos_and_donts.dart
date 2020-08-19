@@ -1,7 +1,6 @@
 import 'package:covid/components/dos_and_dont_card.dart';
 import 'package:flutter/material.dart';
 import 'package:covid/constants.dart';
-import 'package:covid/components/symptoms_card.dart';
 
 class DosAndDontsPage extends StatelessWidget {
   @override

@@ -4,9 +4,9 @@ const kHomeScreenTextStyle = TextStyle(
     fontFamily: 'Poppins',
     fontWeight: FontWeight.bold,
     color: Colors.black,
-    fontSize: 25);
+    fontSize: 30);
 
-const kHomeScreenIconSize = 40.0;
+const kHomeScreenIconSize = 80.0;
 
 final kBottomBarTextStyle =
     TextStyle(fontFamily: 'Baloo', color: Colors.black, fontSize: 20.0);
@@ -45,4 +45,21 @@ final kactionInfoStyle = TextStyle(
   fontFamily: 'Ballo',
   fontSize: 17,
   height: 1.2,
+);
+
+final kSelectImageCameraButtonColor = Color(0xFF47B2A0);
+final kSelectImageButtonGalleryColor = Color(0xFFFAD751);
+final kClassifyImageButtonColor = Color(0xFF4E76E5);
+
+final kResultTextStyle = TextStyle(
+    color: Colors.black,
+    fontFamily: 'Baloo',
+    fontWeight: FontWeight.bold,
+    fontSize: 20);
+
+final kPredictButtonsStyle = TextStyle(
+  color: Colors.black,
+  fontFamily: 'Poppins',
+  fontSize: 25,
+  fontWeight: FontWeight.w700,
 );
