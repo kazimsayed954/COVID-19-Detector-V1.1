@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#584A9F"
+    tools:context=".MainActivity">
+<!--    # 5547A0-->
+    <ImageView
+        android:id="@+id/covidImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/covid19__new"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="100dp"
+        android:paddingTop="160dp"
+        android:paddingLeft="150dp"
+        android:paddingRight="150dp"
+        tools:ignore="MissingConstraints">
+
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/covidImage"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="40dp"
+        android:textAlignment="center"
+        android:paddingVertical="10dp"
+        android:paddingTop="20dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:text="Covid-19 Detector"
+        android:textSize="40sp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay Home..Stay Safe..!!"
+        app:layout_constraintTop_toBottomOf="@id/txt"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingVertical="8dp"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:paddingHorizontal="69dp">
+
+    </TextView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
