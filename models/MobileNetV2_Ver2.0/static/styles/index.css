@@ -1,0 +1,511 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.design1{
+    width: 100%;
+}
+.design1 .imgback{
+    display: none;
+}
+.design1 .img3605{
+    width: 60%;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.design1 .covidtitle{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    font: SemiCondensed 84px/118px Bahnschrift;
+    font-family: 'Noto Serif TC', serif;
+    color: #567BD1;
+    font-size: 35px;
+    text-align: center;
+}
+.design1 .divform .inpupload[type="file"]{
+    top: 365px;
+    left: 100px;
+    width: 260px;
+    height: 77px;
+    position: absolute;
+    border-radius: 10px;
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    font-size: 30px;
+}
+.design1 .divform label{
+    display: block;
+    margin:auto;
+    width: 200px;
+    color: aliceblue;
+    font-family: 'Baloo 2', cursive;
+    background: #3152BC 0% 0% no-repeat padding-box;
+    border-radius: 39px;
+    font-size: 30px;
+    text-align: center;
+}
+.design1 .img_preview{
+    display: none;
+    margin: 5%;
+    height: 40%;
+}
+
+.design1 .img_preview .img_preview_image{
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.design1 .submit{
+    background: #3152BC 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 39px;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+.design1 .predtext{
+    top: 90%;
+    font-family: 'Baloo 2', cursive;
+    font-size: 30px;
+    color: #3152BC;
+    width: 200px;
+    margin: auto;
+}
+.design2 .path2{
+    display: none;
+}
+.design2 .group3{
+    top: 900px;
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+.design2 .howto{
+    top: 90%;
+    font-family: 'Baloo 2', cursive;
+    font-size: 30px;
+    color: #3152BC;
+    width: 310px;
+    margin: auto;
+}
+.design3 .mask{
+    width: 50%;
+    float: right;
+}
+.design3 .wearmask p{
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+    color: #3152BC;
+    float: left;
+    margin: 10% 0px 0px 10%;
+}
+.design4 .hands{
+    float: left;
+    width: 60%;
+}
+.washhands p{
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+    color: #3152BC;
+    float: right;
+    margin: 15% 0% 0px 0px;
+}
+.design5 .cough{
+    width: 50%;
+    float: right;
+}
+.covercough p{
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+    color: #3152BC;
+    float: left;
+    width: 40%;
+    margin: 10% 0px 50px 10px;
+}
+.design6 .handshake{
+    float: left;
+    width: 50%;
+}
+.contact p{
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+    color: #3152BC;
+    float: right;
+    margin: 10% 5% 0px 0px;
+}
+@media only screen and (min-width: 768px){
+    body{
+        margin: 0;
+    }
+    .design1{
+        width: 100%;
+    }
+
+    .design1 .imgback{
+        position: absolute;
+        display: block;
+        margin-right: 0px;
+        top: 0;
+        left: 47%;
+        width: 53%;
+    }
+    .design1 .img3605{
+        position: relative;
+        float: right;
+        width: 40%;
+        top: 20px;
+    }
+    .design1 .covidtitle{
+        top: 20px;
+        position: absolute;
+        width: 55%;
+        font: SemiCondensed 84px/118px Bahnschrift;
+        font-family: 'Noto Serif TC', serif;
+        color: #567BD1;
+        font-size: 70px;
+        margin: 0px;
+    }
+
+    .design1 .divform .inpupload[type="file"]{
+        top: 365px;
+        left: 100px;
+        width: 260px;
+        height: 77px;
+        position: absolute;
+        border-radius: 10px;
+        display: none;
+        font-family: 'Roboto', sans-serif;
+        color: aliceblue;
+        font-size: 30px;
+    }
+    .design1 .divform label{
+        position: absolute;
+        top: 50%;
+        color: aliceblue;
+        font-family: 'Baloo 2', cursive;
+        background: #3152BC 0% 0% no-repeat padding-box;
+        border-radius: 39px;
+        font-size: 30px;
+        left: 3%;
+    }
+    .design1 .img_preview{
+        display: none;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        width: 200px;
+        height: 200px;
+        margin: 0;
+    }
+
+    .design1 .img_preview .img_preview_image{
+        display: none;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .design1 .submit{
+        position: absolute;
+        top: 59%;
+        margin: 0;
+        padding: 0;
+        color: aliceblue;
+        font-family: 'Baloo 2', cursive;
+        background: #3152BC 0% 0% no-repeat padding-box;
+        border-radius: 39px;
+        font-size: 30px;
+        left: 3%;
+    }
+    .design1 .predtext{
+        position: absolute;
+        top: 60%;
+        left: 30%;
+        font-family: 'Baloo 2', cursive;
+        font-size: 30px;
+        color: #3152BC;
+        width: 200px;
+    }
+    .design2 .path2{
+        display: block;
+        position: absolute;
+        float: left;
+        top: 80%;
+        width: 53%;
+        margin: 0;
+    }
+    .design2 .group3{
+        position: absolute;
+        top: 100%;
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+    .design2 .howto{
+        top: 100%;
+        font-family: 'Baloo 2', cursive;
+        font-size: 55px;
+        color: #3152BC;
+        width: 400px;
+        position: absolute;
+        right: 0;
+        left: 45%;
+    }
+    .design3 .mask{
+        position: absolute;
+        top: 190%;
+        width: 50%;
+        right: 0;  
+    }
+    .design3 .wearmask p{
+        position: absolute;
+        top: 190%;
+        font-family: 'Baloo 2', cursive;
+        font-size: 50px;
+        color: #3152BC;
+        float: left;
+        margin: 10% 0px 0px 10%;
+    }
+
+    .design4 .hands{
+        position: absolute;
+        top: 260%;
+        float: left;
+        width: 60%;
+    }
+    .washhands p{
+        position: absolute;
+        top: 280%;
+        font-family: 'Baloo 2', cursive;
+        font-size: 55px;
+        color: #3152BC;
+        float: right;
+        right: 0;
+        margin: 0;
+    }
+    .design5 .cough{
+        position: absolute;
+        top: 320%;
+        width: 40%;
+        right: 0;
+    }
+    .covercough p{
+        position: absolute;
+        top: 320%;
+        font-family: 'Baloo 2', cursive;
+        font-size: 50px;
+        color: #3152BC;
+        float: left;
+        margin: 10% 0px 0px 10%;
+    }
+    .design6 .handshake{
+        position: absolute;
+        top: 370%;
+        float: left;
+        width: 50%;
+    }
+    .contact p{
+        position: absolute;
+        top: 380%;
+        font-family: 'Baloo 2', cursive;
+        font-size: 55px;
+        color: #3152BC;
+        float: right;
+        right: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    body{
+        margin: 0;
+    }
+    .design1{
+        width: 100%;
+    }
+
+    .design1 .imgback{
+        position: absolute;
+        display: block;
+        margin-right: 0px;
+        top: 0;
+        left: 47%;
+        width: 53%;
+    }
+    .design1 .img3605{
+        position: relative;
+        float: right;
+        width: 40%;
+        top: 20px;
+    }
+    .design1 .covidtitle{
+        top: 20px;
+        position: absolute;
+        width: 55%;
+        font: SemiCondensed 84px/118px Bahnschrift;
+        font-family: 'Noto Serif TC', serif;
+        color: #567BD1;
+        font-size: 70px;
+        margin: 0px;
+    }
+
+    .design1 .divform .inpupload[type="file"]{
+        top: 365px;
+        left: 100px;
+        width: 260px;
+        height: 77px;
+        position: absolute;
+        border-radius: 10px;
+        display: none;
+        font-family: 'Roboto', sans-serif;
+        color: aliceblue;
+        font-size: 30px;
+    }
+    .design1 .divform label{
+        position: absolute;
+        top: 50%;
+        color: aliceblue;
+        font-family: 'Baloo 2', cursive;
+        background: #3152BC 0% 0% no-repeat padding-box;
+        border-radius: 39px;
+        font-size: 30px;
+        left: 3%;
+    }
+    .design1 .img_preview{
+        display: none;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        width: 200px;
+        height: 200px;
+        margin: 0;
+    }
+
+    .design1 .img_preview .img_preview_image{
+        text-align: center;
+        align-items: center;
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+    .design1 .submit{
+        position: absolute;
+        top: 59%;
+        margin: 0;
+        padding: 0;
+        color: aliceblue;
+        font-family: 'Baloo 2', cursive;
+        background: #3152BC 0% 0% no-repeat padding-box;
+        border-radius: 39px;
+        font-size: 30px;
+        left: 3%;
+    }
+    .design1 .predtext{
+        position: absolute;
+        top: 60%;
+        left: 30%;
+        font-family: 'Baloo 2', cursive;
+        font-size: 30px;
+        color: #3152BC;
+        width: 200px;
+    }
+    .design2 .path2{
+        display: block;
+        position: absolute;
+        float: left;
+        top: 80%;
+        width: 53%;
+        margin: 0;
+    }
+    .design2 .group3{
+        position: absolute;
+        top: 100%;
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+    .design2 .howto{
+        top: 120%;
+        font-family: 'Baloo 2', cursive;
+        font-size: 55px;
+        color: #3152BC;
+        width: 400px;
+        position: absolute;
+        right: 0;
+        left: 55%;
+    }
+    .design3 .mask{
+        position: absolute;
+        top: 200%;
+        width: 50%;
+        right: 0;  
+    }
+    .design3 .wearmask p{
+        position: absolute;
+        top: 230%;
+        font-family: 'Baloo 2', cursive;
+        font-size: 60px;
+        color: #3152BC;
+        float: left;
+        margin: 7% 0px 0px 10%;
+    }
+    .design4 .hands{
+        position: absolute;
+        top: 300%;
+        float: left;
+        width: 60%;
+    }
+    .washhands p{
+        position: absolute;
+        top: 320%;
+        font-family: 'Baloo 2', cursive;
+        font-size: 55px;
+        color: #3152BC;
+        float: right;
+        right: 5%;
+        margin: 0;
+    }
+    .design5 .cough{
+        position: absolute;
+        top: 380%;
+        width: 40%;
+        right: 0;
+    }
+    .covercough p{
+        position: absolute;
+        top: 380%;
+        font-family: 'Baloo 2', cursive;
+        font-size: 50px;
+        color: #3152BC;
+        float: left;
+        margin: 10% 0px 0px 10%;
+    }
+    .design6 .handshake{
+        position: absolute;
+        top: 450%;
+        float: left;
+        width: 50%;
+    }
+    .contact p{
+        position: absolute;
+        top: 480%;
+        font-family: 'Baloo 2', cursive;
+        font-size: 55px;
+        color: #3152BC;
+        float: right;
+        right: 10%;
+        margin: 0;
+    }
+}
