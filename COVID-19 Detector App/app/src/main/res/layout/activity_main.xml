@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#584A9F"
+    tools:context=".MainActivity">
+<!--    # 5547A0-->
+    <ImageView
+        android:id="@+id/covidImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/covid19__new"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="100dp"
+        android:paddingTop="160dp"
+        android:paddingLeft="150dp"
+        android:paddingRight="150dp"
+        tools:ignore="MissingConstraints">
+
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/covidImage"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="10dp"
+
+
+        android:paddingTop="20dp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Covid-19 Detector"
+        android:textSize="40sp"
+        >
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
