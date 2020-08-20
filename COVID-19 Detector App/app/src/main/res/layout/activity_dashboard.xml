@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:id="@+id/fragment_container"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_nav_menu"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dashboard"
-        android:textSize="25sp"
-        android:paddingTop="300dp"
-        android:paddingLeft="150dp"
-        android:textAlignment="center"
-        tools:ignore="MissingConstraints">
+        app:cnb_menuResource="@menu/bottom_nav_menu"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_corner"
+        app:cnb_unselectedColor="@color/black"
+        app:cnb_radius="8dp"
+        app:cnb_orientationMode="horizontal"
+        android:layout_margin="30dp"
+        android:elevation="8dp"
+        >
 
-    </TextView>
+    </com.ismaeldivita.chipnavigation.ChipNavigationBar>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</RelativeLayout>
