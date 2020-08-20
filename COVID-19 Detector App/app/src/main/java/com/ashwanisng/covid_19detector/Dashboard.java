@@ -19,7 +19,7 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
 
         chipNavigationBar = findViewById(R.id.bottom_nav_menu);
-        chipNavigationBar.setItemSelected(R.id.bottom_frag_home, true);
+        chipNavigationBar.setItemSelected(R.id.id_home, true);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new DashboardFragment()).commit();
 
         bottomMenu();
@@ -32,15 +32,15 @@ public class Dashboard extends AppCompatActivity {
 
                 Fragment fragment = null;
                 switch (i){
-                    case R.id.bottom_frag_dashboard:
+                    case R.id.id_checklist:
                         fragment = new DashboardFragment();
                         break;
 
-                    case R.id.bottom_frag_home:
+                    case R.id.id_home:
                         fragment = new HomeFragment();
                         break;
 
-                    case R.id.bottom_frag_about:
+                    case R.id.id_about:
                         fragment = new AboutFragment();
                         break;
                 }

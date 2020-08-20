@@ -6,6 +6,9 @@
     <item
         android:id="@+id/id_home"
         android:title="Home"
+        app:cnb_iconColor ="@color/white"
+        app:cnb_textColor="@color/white"
+        app:cnb_backgroundColor="@color/orange"
         android:icon="@drawable/home"
         >
 
@@ -14,6 +17,10 @@
     <item
         android:id="@+id/id_checklist"
         android:title="CheckList"
+        app:cnb_backgroundColor="@color/orange"
+
+        app:cnb_iconColor ="@color/white"
+        app:cnb_textColor="@color/white"
         android:icon="@drawable/checklist">
 
     </item>
@@ -21,6 +28,11 @@
     <item
         android:id="@+id/id_about"
         android:title="About"
+        app:cnb_backgroundColor="@color/orange"
+
+        app:cnb_iconColor ="@color/white"
+        app:cnb_textColor="@color/white"
+
         android:icon="@drawable/about">
 
     </item>
