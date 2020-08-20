@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#584A9F"
+    android:background="#2979ff"
     tools:context=".MainActivity">
 <!--    # 5547A0-->
     <ImageView
         android:id="@+id/covidImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/covid19__new"
+        android:src="@drawable/avoid_public_place_new"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="100dp"
