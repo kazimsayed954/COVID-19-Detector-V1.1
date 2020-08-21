@@ -48,7 +48,7 @@ class DosAndDontsPage extends StatelessWidget {
               flex: 1,
               child: DosAndDontsCard(
                 image: 'assets/images/dosanddonts/social-distance.svg',
-                actionName: 'Practice Social Distancing',
+                actionName: 'Social Distancing',
                 actionInfo:
                     'In case you go out, keep a distance of 6 feet from others',
                 actionStyle: kactionNameGreenStyle,

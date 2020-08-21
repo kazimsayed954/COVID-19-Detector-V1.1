@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:covid/constants.dart';
-import 'package:covid/models/Districts.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:covid/screens/districtwise.dart';
 
 class UserList extends StatelessWidget {
@@ -22,6 +20,8 @@ class UserList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black, size: 30.0),
+        shadowColor: Colors.black54,
         title:
             Text('India', style: kTextStyleAppBar, textAlign: TextAlign.center),
       ),
@@ -42,7 +42,10 @@ class UserList extends StatelessWidget {
                                 Icon(Icons.show_chart, color: kColourPrimary),
                             title: Text(
                               _name(snapshot.data[index]),
-                              style: kTextStyleDate,
+                              style: TextStyle(
+                                fontFamily: 'Baloo',
+                                fontSize: 24.0,
+                              ),
                             ),
                             subtitle: Text(
                               "Confirmed :${(snapshot.data[index]['confirmed'].toString())}",

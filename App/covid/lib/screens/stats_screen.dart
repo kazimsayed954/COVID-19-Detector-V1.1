@@ -6,7 +6,6 @@ import 'package:covid/services/coronavirus_service.dart';
 import 'package:covid/models/coronavirus_data.dart';
 import 'package:covid/components/stack_pie.dart';
 import 'package:covid/components/stats.dart';
-import 'package:covid/components/action_button.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:covid/components/error_alert.dart';
 import 'package:covid/screens/stateswise.dart';
