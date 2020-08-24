@@ -1,5 +1,8 @@
 # COVID-19-Detector-V1.1
 
+![covid](https://user-images.githubusercontent.com/44340485/91087254-cf2edc80-e66d-11ea-8fa5-203aad2583d4.jpg)
+
+
 # Project Motivation
 
 A novel strain of coronavirus — SARS-CoV-2 — was first detected in December 2019 in Wuhan, a city in China’s Hubei province with a population of 11 million, after an outbreak of pneumonia without an obvious cause. The virus has now spread to over 200 countries and territories across the globe and was characterized as a pandemic by the World Health Organization. India coronavirus cases crossed the one million or the 10 lakh-mark. 
@@ -17,26 +20,26 @@ The aim of this project is to create a web application and a mobile app for dete
 
 # File Description
 
-1 - Dataset created <br>
+**1 - Dataset created** <br>
 `COVID-19-Detector-V1.1/DataSet Creator.ipynb
 `
 
-2 - CNN Model <br>
+**2 - CNN Model** <br>
 `COVID-19-Detector-V1.1/Model/COVID_19_Detector.ipynb
 `
 
 > **To make a CNN Model we use 120 COVID Images and 120 Nomal Images.**
 
 
-3 - tfllite file <br>
+**3 - tfllite file** <br>
 `COVID-19-Detector-V1.1/Model/covid_model.tflite
 `
 
-4 - lables <br>
+**4 - lables** <br>
 `COVID-19-Detector-V1.1/Model/labels.txt
 `
 
-5 - Flutter Application <br>
+**5 - Flutter Application** <br>
 `COVID-19-Detector-V1.1/App/covid/
 `
 
