@@ -146,6 +146,9 @@ class HomeBase extends StatelessWidget {
               ),
               text: 'Myth'),
         ),
+        SizedBox(
+          height: 10,
+        )
       ],
     );
   }

@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:intl/intl.dart';
-import 'package:geolocator/geolocator.dart';
 
 class CoronavirusData {
   final String date;
@@ -15,20 +14,17 @@ class CoronavirusData {
 
   CoronavirusData(
       {@required this.date,
-        @required this.locationLabel,
-        @required this.totalNumber,
-        @required this.recoveredNumber,
-        @required this.deadNumber,
-        @required this.sickNumber,
-        @required this.sickPercentage,
-        @required this.recoveredPercentage,
-        @required this.deadPercentage});
+      @required this.locationLabel,
+      @required this.totalNumber,
+      @required this.recoveredNumber,
+      @required this.deadNumber,
+      @required this.sickNumber,
+      @required this.sickPercentage,
+      @required this.recoveredPercentage,
+      @required this.deadPercentage});
 
-  factory CoronavirusData.formatted({
-    Map<String, dynamic> json,
-    String country,
-    String province
-  }) {
+  factory CoronavirusData.formatted(
+      {Map<String, dynamic> json, String country, String province}) {
     int totalNumber = json['Global']['TotalConfirmed'];
     int deadNumber = json['Global']['TotalDeaths'];
     int recoveredNumber = json['Global']['TotalRecovered'];
@@ -50,13 +46,11 @@ class CoronavirusData {
     );
   }
 
-
   factory CoronavirusData.byCountryFormatted({
-     List<dynamic> json,
+    List<dynamic> json,
     String country,
     String province,
   }) {
-
     int totalNumber = json[4];
     int deadNumber = json[5];
     int recoveredNumber = json[6];
@@ -64,7 +58,6 @@ class CoronavirusData {
       throw Exception('No confirmed cases in your country.');
     }
     int sickNumber = totalNumber - recoveredNumber - deadNumber;
-
 
     return CoronavirusData(
       date: DateFormat('EEEE d MMMM y').format(DateTime.now()),

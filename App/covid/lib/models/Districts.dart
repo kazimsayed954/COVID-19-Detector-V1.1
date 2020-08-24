@@ -411,7 +411,8 @@ List<String> getDistricts(String statecode) {
       break;
 
     case 'UN':
-      return district=['Unassigned'];break;
+      return district = ['Unassigned'];
+      break;
     case 'MH':
       return district = [
         'Ahmednagar',
@@ -874,7 +875,8 @@ List<String> getDistricts(String statecode) {
         'Sonbhadra',
         'Sultanpur',
         'Unnao',
-        'Varanasi'];
+        'Varanasi'
+      ];
       break;
 
     case 'UT':

@@ -33,8 +33,10 @@ class DistrictPageState extends State<DistrictPage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black, size: 30.0),
+        shadowColor: Colors.black54,
+        title: Text(
           widget.title,
           style: kTextStyleAppBar,
           textAlign: TextAlign.justify,
@@ -56,10 +58,14 @@ class DistrictPageState extends State<DistrictPage> {
                           children: <Widget>[
                             ListTile(
                               leading:
-                                  Icon(Icons.show_chart, color: kColourPrimary),
+                                  Icon(Icons.show_chart, color: Colors.purple),
                               title: Text(
                                 '${(l[index])}',
-                                style: kTextStyleDate,
+                                style: TextStyle(
+                                  fontFamily: 'Baloo',
+                                  fontSize: 24.0,
+                                )
+                                /*style: kTextStyleDate*/,
                               ),
                               subtitle: Text(
                                 "Confirmed :${(snapshot.data[(l[index])]['confirmed'].toString())}",
