@@ -25,6 +25,9 @@ The aim of this project is to create a web application and a mobile app for dete
 `COVID-19-Detector-V1.1/Model/COVID_19_Detector.ipynb
 `
 
+> **To make a CNN Model we use 120 COVID Images and 120 Nomal Images.**
+
+
 3 - tfllite file <br>
 `COVID-19-Detector-V1.1/Model/covid_model.tflite
 `
@@ -36,3 +39,15 @@ The aim of this project is to create a web application and a mobile app for dete
 5 - Flutter Application <br>
 `COVID-19-Detector-V1.1/App/covid/
 `
+
+# Licensing and Acknowledgements
+
+Dataset collected from -
+
+1- [GitHub for COVID cases](https://github.com/ieee8023/covid-chestxray-dataset)
+
+2 - [Kaggle for Normal Cases](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
+
+**3 - TO make a flutter app go through the official documentation.**
+
+[Flutter App](https://flutter.dev/docs/get-started/install)
