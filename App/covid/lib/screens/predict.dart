@@ -22,6 +22,7 @@ class _MyImagePickerState extends State<MyImagePicker> {
   File imageURI;
   String result;
   String path;
+
   final picker = ImagePicker();
 
   Future getImageFromCamera() async {
@@ -149,5 +150,11 @@ class _MyImagePickerState extends State<MyImagePicker> {
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    Tflite.close();
+    super.dispose();
   }
 }
