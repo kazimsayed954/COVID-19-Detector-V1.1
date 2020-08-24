@@ -7,9 +7,9 @@ The dataset has been compiled from the following source :  Chest X-ray images (1
 # Local Installation 
 1. Clone the Repo by going to your local Git Client and pushing in the command:</br>
 `https://github.com/kazimsayed954/COVID-19-Detector-V1.1.git`
-2. Install the packages <br>
+2. Open terminal and change the directory to models/MobileNetV2_Ver2.0 <br>
+`cd /models/MobileNetV2_Ver2.0/`
+3. Install the packages <br>
 `pip install -r requirements.txt`
-3. Open terminal and change the directory to models/MobileNetV2_Ver2.0 <br>
-`cd/models/MobileNetV2_Ver2.0/`
 4. To run the program <br>
 `python app.py`
