@@ -3,6 +3,17 @@
 ![c](https://user-images.githubusercontent.com/44340485/91125475-725c1200-e6bf-11ea-8d2b-a030f44ddc70.jpg)
 
 
+# Local Installation 
+1. Clone the Repo by going to your local Git Client and pushing in the command:</br>
+`https://github.com/kazimsayed954/COVID-19-Detector-V1.1.git`
+2. Open terminal and change the directory to models/MobileNetV2_Ver2.0 <br>
+`cd /models/MobileNetV2_Ver2.0/`
+3. Install the packages <br>
+`pip install -r requirements.txt`
+4. To run the program <br>
+`python app.py`
+=======
+
 # Project Motivation
 
 A novel strain of coronavirus — SARS-CoV-2 — was first detected in December 2019 in Wuhan, a city in China’s Hubei province with a population of 11 million, after an outbreak of pneumonia without an obvious cause. The virus has now spread to over 200 countries and territories across the globe and was characterized as a pandemic by the World Health Organization. India coronavirus cases crossed the one million or the 10 lakh-mark.<br>
@@ -59,6 +70,5 @@ Dataset collected from -
 
 2 - [Kaggle for Normal Cases](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
-**3 - TO make a flutter app go through the official documentation.**
-
+**3 - TO make a flutter app go through the official documentation.**  
 [Flutter App](https://flutter.dev/docs/get-started/install)
