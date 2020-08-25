@@ -70,5 +70,19 @@ Dataset collected from -
 
 2 - [Kaggle for Normal Cases](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
-**3 - TO make a flutter app go through the official documentation.**  
+**3 - To make a flutter app go through the official documentation.**  
+
 [Flutter App](https://flutter.dev/docs/get-started/install)
+
+The app is located inside  `App/covid/` dir and can be built easily using Flutter SDK.
+
+    pub get
+    flutter build apk
+  
+Acknowledgements for App illustrations : 
+
+ - https://iconscout.com/icon-pack/coronavirus-covid19
+ - https://iconscout.com/icon-pack/disease-2
+ 
+ 
+  
