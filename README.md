@@ -1,4 +1,4 @@
-# COVID-19-Detector-V1.1
+# COVID-19-Detector
 
 ![c](https://user-images.githubusercontent.com/44340485/91125475-725c1200-e6bf-11ea-8d2b-a030f44ddc70.jpg)
 
