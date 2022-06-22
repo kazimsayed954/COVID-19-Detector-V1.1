@@ -3,5 +3,5 @@ scikit_image==0.16.2
 tensorflow==2.5.0
 Werkzeug==1.0.1
 opencv_python==4.4.0.42
-numpy==1.18.5
+numpy==1.22.0
 skimage==0.0
